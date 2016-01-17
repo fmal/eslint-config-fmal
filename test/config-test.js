@@ -6,6 +6,7 @@ var reactConfig = require('../react');
 var babelConfig = require('../babel');
 
 assert.equal(config.env.node, true);
+assert.equal(config.env.es6, false);
 
 assert((reactConfig.plugins || []).indexOf('react') > -1);
 assert(reactConfig.ecmaFeatures.jsx);
