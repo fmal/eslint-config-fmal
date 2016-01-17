@@ -1,7 +1,7 @@
 # eslint-config-fmal
 
 [![Version npm](http://img.shields.io/npm/v/eslint-config-fmal.svg?style=flat-square)](http://browsenpm.org/package/eslint-config-fmal)
-[![BuildStatus](http://img.shields.io/travis/fmal/eslint-config-fmal/master.svg?style=flat-square)](https://travis-ci.org/vaffel/eslint-config-fmal)
+[![BuildStatus](http://img.shields.io/travis/fmal/eslint-config-fmal/master.svg?style=flat-square)](https://travis-ci.org/fmal/eslint-config-fmal)
 
 ## Usage
 
