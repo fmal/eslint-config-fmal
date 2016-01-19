@@ -67,7 +67,7 @@ npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslin
 {
   "extends": [
     "fmal",
-    "fmal/es6",
+    "fmal/babel",
     "fmal/react"
   ],
   "rules": {
