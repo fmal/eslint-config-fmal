@@ -15,8 +15,7 @@ module.exports = {
   rules: {
     'prefer-const': 2,
     'babel/generator-star-spacing': [2, 'after'],
-    'babel/new-cap': 1,
-    'babel/object-curly-spacing': 1,
+    'babel/object-curly-spacing': [1, 'always'],
     'babel/object-shorthand': [1, 'always'],
     'babel/arrow-parens': [2, 'as-needed']
   }
