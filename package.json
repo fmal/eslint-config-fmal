@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fmal",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "fmal ESLint Config",
   "main": "index.js",
   "license": "MIT",
