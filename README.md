@@ -51,6 +51,22 @@ Add this to your `.eslintrc`:
 }
 ```
 
+### Import
+
+To use the `eslint-plugin-import` rule set:
+
+```sh
+npm i -D eslint eslint-config-fmal eslint-plugin-import
+```
+
+Add this to your `.eslintrc`:
+
+```js
+{
+  "extends": "fmal/import"
+}
+```
+
 ## Composition
 
 You can use any combination of these shareable configs.
@@ -58,7 +74,7 @@ You can use any combination of these shareable configs.
 Install the dependencies:
 
 ```sh
-npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslint-plugin-babel eslint-plugin-react
+npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslint-plugin-babel eslint-plugin-import eslint-plugin-react
 ```
 
 `.eslintrc`:
@@ -68,6 +84,7 @@ npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslin
   "extends": [
     "fmal",
     "fmal/babel",
+    "fmal/import",
     "fmal/react"
   ],
   "rules": {

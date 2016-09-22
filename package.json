@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fmal",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "fmal ESLint Config",
   "main": "index.js",
   "license": "MIT",
@@ -12,11 +12,10 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^1.10.3",
-    "eslint-config-semistandard": "^5.0.0",
-    "eslint-config-standard": "^4.4.0",
-    "eslint-plugin-standard": "^1.3.1",
-    "pre-commit": "^1.1.2"
+    "eslint": "^3.5.0",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-plugin-standard": "^2.0.0"
   },
   "scripts": {
     "test": "node test/config-test.js",

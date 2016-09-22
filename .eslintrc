@@ -3,13 +3,7 @@
     "eslint:recommended",
     "semistandard"
   ],
-  "ecmaFeatures": {
-    "modules": false,
-    "experimentalObjectRestSpread": false
-  },
   "env": {
-    "node": true,
-    "browser": true,
-    "es6": false
+    "browser": true
   }
 }
