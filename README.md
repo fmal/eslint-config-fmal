@@ -19,7 +19,7 @@ Add to your `.eslintrc`
 }
 ```
 
-### Babel ES6
+### Babel
 
 To use the Babel rule set:
 

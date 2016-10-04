@@ -6,12 +6,13 @@ module.exports = {
     'babel'
   ],
   rules: {
-    'babel/generator-star-spacing': [2, 'after'],
-    'babel/object-curly-spacing': [1, 'always'],
-    'babel/object-shorthand': [1, 'always'],
-
+    'strict': [2, 'never'],
     'generator-star-spacing': 0,
     'object-shorthand': 0,
-    'strict': [2, 'never']
+
+    // https://github.com/babel/eslint-plugin-babel
+    'babel/generator-star-spacing': [2, 'after'],
+    'babel/object-curly-spacing': [1, 'always'],
+    'babel/object-shorthand': [1, 'always']
   }
 };

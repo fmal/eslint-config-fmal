@@ -12,6 +12,7 @@ module.exports = {
   rules: {
     'jsx-quotes': [2, 'prefer-double'],
 
+    // https://github.com/yannickcr/eslint-plugin-react
     'react/display-name': 2,
     'react/jsx-boolean-value': [2, 'never'],
     'react/jsx-closing-bracket-location': [2, 'tag-aligned'],
