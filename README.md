@@ -35,6 +35,22 @@ Add this to your `.eslintrc`:
 }
 ```
 
+### Flow
+
+To use the [flow](https://flowtype.org) rule set:
+
+```sh
+npm i -D eslint eslint-config-fmal babel-eslint eslint-plugin-flowtype eslint-plugin-flowtype-errors
+```
+
+Add this to your `.eslintrc`:
+
+```js
+{
+  "extends": "fmal/flow"
+}
+```
+
 ### React
 
 To use the React rule set:
@@ -74,7 +90,7 @@ You can use any combination of these shareable configs.
 Install the dependencies:
 
 ```sh
-npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslint-plugin-babel eslint-plugin-import eslint-plugin-react
+npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslint-plugin-babel eslint-plugin-flowtype eslint-plugin-flowtype-errors eslint-plugin-import eslint-plugin-react
 ```
 
 `.eslintrc`:
@@ -84,6 +100,7 @@ npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslin
   "extends": [
     "fmal",
     "fmal/babel",
+    "fmal/flow",
     "fmal/import",
     "fmal/react"
   ],
