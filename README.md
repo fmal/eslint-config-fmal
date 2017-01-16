@@ -83,6 +83,38 @@ Add this to your `.eslintrc`:
 }
 ```
 
+### Jest
+
+To use the [Jest](http://facebook.github.io/jest/) rule set:
+
+```sh
+npm i -D eslint eslint-config-fmal eslint-plugin-jest
+```
+
+Add this to your `.eslintrc`:
+
+```js
+{
+  "extends": "fmal/jest"
+}
+```
+
+### Mocha
+
+To use the [Mocha](https://mochajs.org/) rule set:
+
+```sh
+npm i -D eslint eslint-config-fmal
+```
+
+Add this to your `.eslintrc`:
+
+```js
+{
+  "extends": "fmal/mocha"
+}
+```
+
 ## Composition
 
 You can use any combination of these shareable configs.
@@ -90,7 +122,7 @@ You can use any combination of these shareable configs.
 Install the dependencies:
 
 ```sh
-npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslint-plugin-babel eslint-plugin-flowtype eslint-plugin-flowtype-errors eslint-plugin-import eslint-plugin-react
+npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslint-plugin-babel eslint-plugin-flowtype eslint-plugin-flowtype-errors eslint-plugin-import eslint-plugin-react eslint-plugin-jest
 ```
 
 `.eslintrc`:
@@ -102,7 +134,8 @@ npm i -D eslint eslint-config-fmal eslint-config-semistandard babel-eslint eslin
     "fmal/babel",
     "fmal/flow",
     "fmal/import",
-    "fmal/react"
+    "fmal/react",
+    "fmal/jest"
   ],
   "rules": {
     // custom tweaks
