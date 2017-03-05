@@ -2,7 +2,7 @@
 
 module.exports = {
   env: {
-    jest: true
+    'jest/globals': true
   },
   plugins: [
     'jest'
@@ -12,8 +12,8 @@ module.exports = {
     'no-magic-numbers': 0,
     'no-console': 0,
 
-    // https://github.com/jkimbo/eslint-plugin-jest
-    'jest/no-exclusive-tests': 1,
+    // https://github.com/facebook/jest/tree/master/packages/eslint-plugin-jest
+    'jest/no-focused-tests': 2,
     'jest/no-identical-title': 1
   }
 };
