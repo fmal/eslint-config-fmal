@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fmal",
-  "version": "2.2.0",
+  "version": "3.0.2",
   "description": "fmal ESLint Config",
   "main": "index.js",
   "license": "MIT",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "eslint": "^3.19.0",
+    "npmpub": "~3.1.0",
     "prettier": "^1.1.0"
   },
   "scripts": {
@@ -32,6 +33,6 @@
     "lint": "eslint .",
     "fmt": "prettier --single-quote --write \"*.js\" \"test/*.js\"",
     "pretest": "npm run fmt && npm run lint",
-    "prepublish": "npm prune && npm test"
+    "release": "npmpub"
   }
 }
