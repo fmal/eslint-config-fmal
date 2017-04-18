@@ -115,6 +115,22 @@ Add this to your `.eslintrc`:
 }
 ```
 
+### css-modules
+
+To use the `eslint-plugin-css-modules` rule set:
+
+```sh
+npm i -D eslint eslint-config-fmal eslint-plugin-css-modules
+```
+
+Add this to your `.eslintrc`:
+
+```js
+{
+  "extends": "fmal/css-modules"
+}
+```
+
 ## Composition
 
 You can use any combination of these shareable configs.
@@ -122,7 +138,7 @@ You can use any combination of these shareable configs.
 Install the dependencies:
 
 ```sh
-npm i -D eslint eslint-config-fmal babel-eslint eslint-plugin-flowtype eslint-plugin-flowtype-errors eslint-plugin-react eslint-plugin-jest
+npm i -D eslint eslint-config-fmal babel-eslint eslint-plugin-flowtype eslint-plugin-flowtype-errors eslint-plugin-react eslint-plugin-jest eslint-plugin-css-modules
 ```
 
 `.eslintrc`:
@@ -135,7 +151,8 @@ npm i -D eslint eslint-config-fmal babel-eslint eslint-plugin-flowtype eslint-pl
     "fmal/flow",
     "fmal/import",
     "fmal/react",
-    "fmal/jest"
+    "fmal/jest",
+    "fmal/css-modules"
   ],
   "rules": {
     // custom tweaks
