@@ -5,8 +5,8 @@ module.exports = {
     mocha: true
   },
   rules: {
-    'max-len': 0,
-    'no-magic-numbers': 0,
-    'no-console': 0
+    'max-len': 'off',
+    'no-magic-numbers': 'off',
+    'no-console': 'off'
   }
 };

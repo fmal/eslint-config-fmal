@@ -9,17 +9,15 @@ var importConfig = require('../import');
 var mochaConfig = require('../mocha');
 var jestConfig = require('../jest');
 
-assert.deepEqual(config.extends, [
-  'eslint:recommended',
-  'semistandard'
-]);
+assert.deepEqual(config.extends, ['standard', 'prettier']);
+assert(~config.plugins.indexOf('prettier'));
+assert(~Object.keys(config.rules).indexOf('prettier/prettier'));
 assert.equal(config.env.browser, true);
 
 assert(~reactConfig.plugins.indexOf('react'));
 assert(reactConfig.parserOptions.ecmaFeatures.jsx);
 
 assert(babelConfig.parser === 'babel-eslint');
-assert(~babelConfig.plugins.indexOf('babel'));
 
 assert(flowConfig.parser === 'babel-eslint');
 assert(~flowConfig.plugins.indexOf('flowtype'));

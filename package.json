@@ -10,17 +10,28 @@
     "eslint",
     "eslint-config"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "eslint-config-prettier": "~1.6.0",
+    "eslint-config-standard": "~10.2.1",
+    "eslint-plugin-import": "~2.2.0",
+    "eslint-plugin-node": "~4.2.2",
+    "eslint-plugin-prettier": "~2.0.1",
+    "eslint-plugin-promise": "~3.5.0",
+    "eslint-plugin-standard": "~3.0.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.19.0",
+    "prettier": ">=0.22.0"
+  },
   "devDependencies": {
-    "eslint": "^3.5.0",
-    "eslint-config-semistandard": "^7.0.0",
-    "eslint-config-standard": "^6.0.0",
-    "eslint-plugin-promise": "^3.0.0",
-    "eslint-plugin-standard": "^2.0.0"
+    "eslint": "^3.19.0",
+    "prettier": "^1.1.0"
   },
   "scripts": {
     "test": "node test/config-test.js",
-    "pretest": "eslint .",
+    "lint": "eslint .",
+    "fmt": "prettier --single-quote --write \"*.js\" \"test/*.js\"",
+    "pretest": "npm run fmt && npm run lint",
     "prepublish": "npm prune && npm test"
   }
 }
