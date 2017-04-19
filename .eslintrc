@@ -10,6 +10,9 @@
     "prettier"
   ],
   "rules": {
+    "standard/object-curly-even-spacing": "off",
+    "standard/array-bracket-even-spacing": "off",
+    "standard/computed-property-even-spacing": "off",
     "prettier/prettier": [
       "error", {
         "singleQuote": true
