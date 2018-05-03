@@ -1,9 +1,12 @@
 'use strict';
 
-var path = require('path');
-var fs = require('fs');
+const path = require('path');
+const fs = require('fs');
 
-var content = fs.readFileSync(path.join(__dirname, '.eslintrc'), 'utf-8');
-var config = JSON.parse(content);
+const content = fs.readFileSync(
+  path.join(__dirname, '.eslintrc.json'),
+  'utf-8'
+);
+const config = JSON.parse(content);
 
 module.exports = config;
