@@ -1,3 +1,7 @@
+# 5.0.0 - 2018-11-09
+
+* Added: support ESLint 5.0.0
+
 # 4.0.0 - 2018-05-03
 
 * Added: support for `eslint@4`
