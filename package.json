@@ -8,22 +8,22 @@
   "repository": "https://github.com/fmal/eslint-config-fmal.git",
   "keywords": ["eslint", "eslint-config"],
   "dependencies": {
-    "eslint-config-prettier": "~2.9.0",
-    "eslint-config-standard": "~11.0.0",
-    "eslint-plugin-import": "~2.11.0",
-    "eslint-plugin-node": "~6.0.1",
-    "eslint-plugin-prettier": "~2.6.0",
-    "eslint-plugin-promise": "~3.7.0",
-    "eslint-plugin-standard": "~3.1.0"
+    "eslint-config-prettier": "~3.1.0",
+    "eslint-config-standard": "~12.0.0",
+    "eslint-plugin-import": "~2.14.0",
+    "eslint-plugin-node": "~8.0.0",
+    "eslint-plugin-prettier": "~3.0.0",
+    "eslint-plugin-promise": "~4.0.0",
+    "eslint-plugin-standard": "~4.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=4.19.0",
-    "prettier": ">=1.11.0"
+    "eslint": ">=5.0.0",
+    "prettier": ">=1.13.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.0",
+    "eslint": "^5.0.0",
     "npmpub": "^3.1.0",
-    "prettier": "^1.12.0"
+    "prettier": "^1.15.0"
   },
   "scripts": {
     "test": "node test/config-test.js",

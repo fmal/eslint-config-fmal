@@ -10,10 +10,14 @@ const mochaConfig = require('../mocha');
 const jestConfig = require('../jest');
 const cssModulesConfig = require('../css-modules');
 
-assert.deepEqual(config.extends, ['standard', 'prettier', 'prettier/standard']);
+assert.deepStrictEqual(config.extends, [
+  'standard',
+  'prettier',
+  'prettier/standard'
+]);
 assert(~config.plugins.indexOf('prettier'));
 assert(~Object.keys(config.rules).indexOf('prettier/prettier'));
-assert.equal(config.env.browser, true);
+assert.strictEqual(config.env.browser, true);
 
 assert(~reactConfig.plugins.indexOf('react'));
 assert(reactConfig.parserOptions.ecmaFeatures.jsx);
@@ -26,7 +30,7 @@ assert(~flowConfig.plugins.indexOf('flowtype-errors'));
 
 assert(~importConfig.plugins.indexOf('import'));
 
-assert.equal(mochaConfig.env.mocha, true);
-assert.equal(jestConfig.env['jest/globals'], true);
+assert.strictEqual(mochaConfig.env.mocha, true);
+assert.strictEqual(jestConfig.env['jest/globals'], true);
 
 assert(~cssModulesConfig.plugins.indexOf('css-modules'));
