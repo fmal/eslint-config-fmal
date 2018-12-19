@@ -1,12 +1,15 @@
 {
   "name": "eslint-config-fmal",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "fmal ESLint Config",
   "main": "index.js",
   "license": "MIT",
   "author": "Filip Malinowski",
   "repository": "https://github.com/fmal/eslint-config-fmal.git",
-  "keywords": ["eslint", "eslint-config"],
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
   "dependencies": {
     "eslint-config-prettier": "~3.1.0",
     "eslint-config-standard": "~12.0.0",
