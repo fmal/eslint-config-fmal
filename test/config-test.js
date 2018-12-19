@@ -9,6 +9,7 @@ const importConfig = require('../import');
 const mochaConfig = require('../mocha');
 const jestConfig = require('../jest');
 const cssModulesConfig = require('../css-modules');
+const typescriptConfig = require('../typescript');
 
 assert.deepStrictEqual(config.extends, [
   'standard',
@@ -34,3 +35,7 @@ assert.strictEqual(mochaConfig.env.mocha, true);
 assert.strictEqual(jestConfig.env['jest/globals'], true);
 
 assert(~cssModulesConfig.plugins.indexOf('css-modules'));
+
+assert(~typescriptConfig.plugins.indexOf('typescript'));
+assert(typescriptConfig.overrides && typescriptConfig.overrides.length > 0);
+assert(typescriptConfig.overrides[0].parser === 'typescript-eslint-parser');
