@@ -36,6 +36,6 @@ assert.strictEqual(jestConfig.env['jest/globals'], true);
 
 assert(~cssModulesConfig.plugins.indexOf('css-modules'));
 
-assert(~typescriptConfig.plugins.indexOf('typescript'));
+assert(~typescriptConfig.plugins.indexOf('@typescript-eslint'));
 assert(typescriptConfig.overrides && typescriptConfig.overrides.length > 0);
-assert(typescriptConfig.overrides[0].parser === 'typescript-eslint-parser');
+assert(typescriptConfig.overrides[0].parser === '@typescript-eslint/parser');

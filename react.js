@@ -9,7 +9,7 @@ module.exports = {
   },
   rules: {
     // https://github.com/yannickcr/eslint-plugin-react
-    'react/jsx-boolean-value': ['error'],
+    'react/jsx-boolean-value': 'error',
     'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
     'react/jsx-no-literals': 'warn',
@@ -28,5 +28,13 @@ module.exports = {
     'react/react-in-jsx-scope': 'warn',
     'react/self-closing-comp': 'error',
     'react/sort-comp': 'warn'
-  }
+  },
+  overrides: [
+    {
+      files: '*.{ts,tsx}',
+      rules: {
+        'react/jsx-filename-extension': 'off'
+      }
+    }
+  ]
 };
