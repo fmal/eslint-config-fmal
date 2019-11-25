@@ -1,3 +1,8 @@
+# 6.1.0 - 2019-11-25
+
+- Added: enforce using `T[]` for arrays
+- Added: more `eslint-plugin-import` rules
+
 # 6.0.0 - 2019-10-08
 
 - Added: support for ESLint 6.x
