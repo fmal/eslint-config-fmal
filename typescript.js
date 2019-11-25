@@ -12,7 +12,9 @@ module.exports = {
     },
     'import/resolver': {
       typescript: {}
-    }
+    },
+    // https://github.com/benmosher/eslint-plugin-import/issues/1525
+    'import/external-module-folders': ['node_modules', 'node_modules/@types']
   },
   overrides: [
     {
@@ -21,6 +23,12 @@ module.exports = {
       rules: {
         // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
         '@typescript-eslint/adjacent-overload-signatures': 'error',
+        '@typescript-eslint/array-type': [
+          'error',
+          {
+            default: 'array'
+          }
+        ],
         '@typescript-eslint/class-name-casing': 'error',
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-inferrable-types': 'error',
@@ -32,7 +40,6 @@ module.exports = {
             objectLiteralTypeAssertions: 'allow-as-parameter'
           }
         ],
-        // '@typescript-eslint/array-type': ['error', 'array-simple'],
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/triple-slash-reference': [
           'error',
