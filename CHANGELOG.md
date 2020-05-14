@@ -1,3 +1,9 @@
+# 7.0.0 - 2020-05-14
+
+- Changed: updated dependencies
+- Added: `react/sort-comp` order with `static-variables` included
+- Removed: prettier <2 support
+
 # 6.1.0 - 2019-11-25
 
 - Added: enforce using `T[]` for arrays
