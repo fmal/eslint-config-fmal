@@ -27,7 +27,18 @@ module.exports = {
     'react/no-unknown-property': 'error',
     'react/react-in-jsx-scope': 'warn',
     'react/self-closing-comp': 'error',
-    'react/sort-comp': 'warn'
+    'react/sort-comp': [
+      'warn',
+      {
+        order: [
+          'static-variables',
+          'static-methods',
+          'lifecycle',
+          'everything-else',
+          'render'
+        ]
+      }
+    ]
   },
   overrides: [
     {
