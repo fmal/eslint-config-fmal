@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = {
+  extends: 'prettier/react',
   plugins: ['react'],
   parserOptions: {
     ecmaFeatures: {
