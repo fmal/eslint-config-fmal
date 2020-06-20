@@ -1,3 +1,9 @@
+# 7.1.0 2020-06-20
+
+- Added: support for ESLint 7.0.0
+- Added: `react-hooks` plugin to `react` config
+- Changed: `react/jsx-no-bind` has been relaxed to allow for arrow functions
+
 # 7.0.0 - 2020-05-14
 
 - Changed: updated dependencies
