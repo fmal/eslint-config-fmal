@@ -10,7 +10,7 @@ module.exports = {
     'no-magic-numbers': 'off',
     'no-console': 'off',
 
-    // https://github.com/facebook/jest/tree/master/packages/eslint-plugin-jest
+    // https://github.com/jest-community/eslint-plugin-jest
     'jest/no-focused-tests': 'error',
     'jest/no-identical-title': 'warn'
   }

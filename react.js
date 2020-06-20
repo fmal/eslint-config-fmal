@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: 'prettier/react',
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true
@@ -18,7 +18,7 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-handler-names': 'warn',
-    'react/jsx-no-bind': 'warn',
+    'react/jsx-no-bind': ['warn', { allowArrowFunctions: true }],
     'react/no-danger': 'warn',
     'react/no-multi-comp': ['error', { ignoreStateless: true }],
     'react/no-did-mount-set-state': 'error',
@@ -39,7 +39,9 @@ module.exports = {
           'render'
         ]
       }
-    ]
+    ],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   },
   overrides: [
     {
