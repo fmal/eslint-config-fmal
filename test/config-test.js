@@ -11,11 +11,7 @@ const jestConfig = require('../jest');
 const cssModulesConfig = require('../css-modules');
 const typescriptConfig = require('../typescript');
 
-assert.deepStrictEqual(config.extends, [
-  'standard',
-  'prettier',
-  'prettier/standard'
-]);
+assert.deepStrictEqual(config.extends, ['standard', 'prettier']);
 assert(~config.plugins.indexOf('prettier'));
 assert(~Object.keys(config.rules).indexOf('prettier/prettier'));
 assert.strictEqual(config.env.browser, true);

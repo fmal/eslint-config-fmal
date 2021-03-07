@@ -2,7 +2,7 @@
   "env": {
     "browser": true
   },
-  "extends": ["standard", "prettier", "prettier/standard"],
+  "extends": ["standard", "prettier"],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error"
