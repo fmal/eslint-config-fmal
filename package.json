@@ -11,6 +11,7 @@
     "eslint-config"
   ],
   "dependencies": {
+    "@rushstack/eslint-patch": "~1.0.6",
     "eslint-config-prettier": "~7.2.0",
     "eslint-config-standard": "~16.0.0",
     "eslint-plugin-import": "~2.21.2",
