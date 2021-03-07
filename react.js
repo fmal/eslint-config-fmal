@@ -1,5 +1,14 @@
 'use strict';
 
+const hasJsxRuntime = (() => {
+  try {
+    require.resolve('react/jsx-runtime.js');
+    return true;
+  } catch (e) {
+    return false;
+  }
+})();
+
 module.exports = {
   extends: 'prettier/react',
   plugins: ['react', 'react-hooks'],
@@ -10,12 +19,15 @@ module.exports = {
   },
   rules: {
     // https://github.com/yannickcr/eslint-plugin-react
+    ...(!hasJsxRuntime && {
+      'react/jsx-uses-react': 'warn',
+      'react/react-in-jsx-scope': 'error'
+    }),
     'react/jsx-boolean-value': 'error',
     'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
     'react/jsx-no-literals': 'warn',
     'react/jsx-no-undef': 'error',
-    'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-handler-names': 'warn',
     'react/jsx-no-bind': ['warn', { allowArrowFunctions: true }],
@@ -26,7 +38,6 @@ module.exports = {
     'react/no-direct-mutation-state': 'error',
     'react/no-deprecated': 'error',
     'react/no-unknown-property': 'error',
-    'react/react-in-jsx-scope': 'warn',
     'react/self-closing-comp': 'error',
     'react/sort-comp': [
       'warn',
