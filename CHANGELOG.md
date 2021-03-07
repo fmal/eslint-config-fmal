@@ -1,3 +1,7 @@
+# 8.1.0 2021-03-07
+
+- Added: patch for enabling ESLint modern module resolution
+
 # 8.0.0 2021-03-07
 
 - Changed: `eslint-config-standard` has been updated to `~16.0.0`
