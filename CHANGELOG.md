@@ -1,3 +1,10 @@
+# 8.0.0 2021-03-07
+
+- Changed: `eslint-config-standard` has been updated to `~16.0.0`
+- Added: detect new JSX runtime and disable React plugin rules accordingly
+- Removed: deprecated `eslint-plugin-standard` plugin
+- Breaking: ESLint 7+ required
+
 # 7.1.0 2020-06-20
 
 - Added: support for ESLint 7.0.0
