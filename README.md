@@ -24,7 +24,7 @@ Add to your `.eslintrc`
 To use the Babel rule set:
 
 ```sh
-npm i -D eslint eslint-config-fmal babel-eslint
+npm i -D eslint eslint-config-fmal @babel/eslint-parser
 ```
 
 Add this to your `.eslintrc`:
@@ -40,7 +40,7 @@ Add this to your `.eslintrc`:
 To use the [flow](https://flowtype.org) rule set:
 
 ```sh
-npm i -D eslint eslint-config-fmal babel-eslint eslint-plugin-flowtype eslint-plugin-flowtype-errors
+npm i -D eslint eslint-config-fmal @babel/eslint-parser eslint-plugin-flowtype eslint-plugin-flowtype-errors
 ```
 
 Add this to your `.eslintrc`:
@@ -154,7 +154,7 @@ You can use any combination of these shareable configs.
 Install the dependencies:
 
 ```sh
-npm i -D eslint eslint-config-fmal babel-eslint @typescript-eslint/parser @typescript-eslint eslint-plugin eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-jest eslint-plugin-css-modules
+npm i -D eslint eslint-config-fmal @babel/eslint-parser @typescript-eslint/parser @typescript-eslint eslint-plugin eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-jest eslint-plugin-css-modules
 ```
 
 `.eslintrc`:

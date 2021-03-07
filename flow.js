@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   plugins: ['flowtype', 'flowtype-errors'],
   rules: {
     // https://github.com/amilajack/eslint-plugin-flowtype-errors

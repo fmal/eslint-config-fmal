@@ -23,9 +23,9 @@ assert.strictEqual(config.env.browser, true);
 assert(~reactConfig.plugins.indexOf('react'));
 assert(reactConfig.parserOptions.ecmaFeatures.jsx);
 
-assert(babelConfig.parser === 'babel-eslint');
+assert(babelConfig.parser === '@babel/eslint-parser');
 
-assert(flowConfig.parser === 'babel-eslint');
+assert(flowConfig.parser === '@babel/eslint-parser');
 assert(~flowConfig.plugins.indexOf('flowtype'));
 assert(~flowConfig.plugins.indexOf('flowtype-errors'));
 
