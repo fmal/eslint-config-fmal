@@ -1,3 +1,11 @@
+# 9.0.0 2022-01-30
+
+- Added: ordering imports
+- Added: new `typescript` config rules for more consistency
+- Changed: `eslint-config-standard` has been updated to `17.0.0-0`
+- Changed: upgraded dependencies
+- Breaking: ESLint 8+ required
+
 # 8.1.1 2021-03-07
 
 - Changed: bumped `eslint-plugin-import`
