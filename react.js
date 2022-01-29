@@ -10,7 +10,6 @@ const hasJsxRuntime = (() => {
 })();
 
 module.exports = {
-  extends: 'prettier/react',
   plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
