@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-  extends: 'prettier/@typescript-eslint',
   parserOptions: {
     jsx: true
   },
@@ -14,7 +13,12 @@ module.exports = {
       typescript: {}
     },
     // https://github.com/benmosher/eslint-plugin-import/issues/1525
-    'import/external-module-folders': ['node_modules', 'node_modules/@types']
+    // https://github.com/import-js/eslint-plugin-import#importexternal-module-folders
+    'import/external-module-folders': [
+      '.yarn',
+      'node_modules',
+      'node_modules/@types'
+    ]
   },
   overrides: [
     {
@@ -29,7 +33,30 @@ module.exports = {
             default: 'array'
           }
         ],
-        '@typescript-eslint/class-name-casing': 'error',
+        '@typescript-eslint/prefer-as-const': 'error',
+        // Enforce camelCase naming convention and PascalCase class and interface names
+        '@typescript-eslint/naming-convention': [
+          'error',
+          {
+            selector: 'default',
+            format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+            leadingUnderscore: 'allow',
+            trailingUnderscore: 'allow'
+          },
+          {
+            selector: 'default',
+            filter: {
+              match: true,
+              // Allow double underscores and React UNSAFE_ (for lifecycle hooks that are to be deprecated)
+              regex: '^(__|UNSAFE_).+$'
+            },
+            format: null
+          },
+          {
+            selector: 'typeLike',
+            format: ['PascalCase']
+          }
+        ],
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-inferrable-types': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
@@ -40,6 +67,10 @@ module.exports = {
             objectLiteralTypeAssertions: 'allow-as-parameter'
           }
         ],
+        '@typescript-eslint/consistent-indexed-object-style': 'error',
+        '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+        '@typescript-eslint/consistent-type-imports': 'error',
+        '@typescript-eslint/method-signature-style': 'error',
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/triple-slash-reference': [
           'error',
@@ -48,6 +79,7 @@ module.exports = {
           }
         ],
         '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/no-unnecessary-type-constraint': 'error',
 
         // already supported by TS
         'no-undef': 'off',
